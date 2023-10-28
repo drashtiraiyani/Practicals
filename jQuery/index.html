@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Hide</title>
+    <!-- Adding jQuery To HTMl -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Lets see Hide, Show, Toggle in jQuery</h1>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="toggle">Toggle</button>
+    <script>
+        $(function () {
+            $(".hide").click(function () {
+                $("h1").hide(2000);
+                $("h1").css({ backgroundColor: "orange"});
+            });
+            $(".show").click(function () {
+                $("h1").show(2000);
+                $("h1").css({ backgroundColor: "black", color: "white" });
+            });
+            $(".toggle").click(function () {
+                $("h1").toggle(2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
